@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>9. Variable Mutation and Type Coercion</title>
+
+        <!-- bootstrap css link -->
+        <link href="../assets/css/bootstrap-v4.5.0.min.css" rel="stylesheet">
+        <!-- font-awesome css link -->
+        <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+        <!-- style css link -->
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <!-- responsive css link -->
+        <link href="../assets/css/responsive.css" rel="stylesheet">
+        <!-- css link end -->
+    </head>
+
+    <body>
+        <div class="heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-2">
+                        <h1>The Complete JavaScript Course 2020: Build Real Projects!</h1>
+                        <p>Press F12 to see the JavaScript code result in your browser console.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="class-code-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h1>9. Variable Mutation and Type Coercion</h1>
+                        <xmp>
+<!-- JavaScript code start -->
+
+/************************** 
+Variable and data types
+***************************/
+var firstName = 'John';
+console.log(firstName);
+
+var lastName = 'Smith';
+var age = 28;
+
+var fullAge = true;
+console.log(fullAge);
+
+var job;
+console.log(job);
+
+job = 'Teacher';
+console.log(job);
+
+// Variable naming rules
+var _3years = 3;
+var johnMark = 'John and Mark';
+// var if = 23;
+
+
+/************************** 
+Variable mutation and type coercion
+***************************/
+
+var firstName2 = 'John';
+var age2 = 28;
+
+console.log(firstName2 + ' ' + age2);
+
+var job, isMarried;
+job = 'Teacher';
+isMarried = false;
+
+console.log(firstName2 + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+
+// Variable mutation
+age = 'twenty eight';
+job = 'driver';
+
+alert(firstName2 + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+
+var lastName = prompt('What is his last Name?');
+console.log(firstName + ' ' + lastName);
+
+
+<!-- JavaScript code end -->
+                        </xmp>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    	<!-- jquery js link -->
+        <script src="../assets/js/jquery-v3.5.1.slim.min.js"></script>
+        <!-- popper js link -->
+        <script src="../assets/js/popper-v1.16.0.min.js"></script>
+        <!-- bootstrap js link -->
+        <script src="../assets/js/bootstrap-v4.5.0.min.js"></script>
+        <!-- main js link -->
+        <script src="../assets/js/main.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
