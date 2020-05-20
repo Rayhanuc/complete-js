@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>10. Basic Operators</title>
+        <title>11. Operator Precedence</title>
 
         <!-- bootstrap css link -->
         <link href="../assets/css/bootstrap-v4.5.0.min.css" rel="stylesheet">
@@ -31,45 +31,48 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-12">
-                        <h1>10. Basic Operators</h1>
+                        <h1>11. Operator Precedence</h1>
                         <xmp>
 <!-- JavaScript code start -->
 
+ 
 /************************** 
-Basic Operators
+Operator Precedence
 ***************************/
-var year, yearJhon, yearMark;
-now = 2018;
-ageJohn = 28;
-ageMark = 33;
 
-// Math Operators
-yearJhon = now - ageJohn;
-yearMark = now - ageMark;
+var now = 2018;
+var yearJohn = 1989;
+var fullAge = 18;
 
-console.log(yearJhon);
-console.log(yearMark);
+// Multiple operators
+var isFullAge = now - yearJohn >= fullAge; // true
+console.log(isFullAge);
 
-console.log(now + 2);
-console.log(now * 2);
-console.log(now / 10);
+// Grouping
+var ageJohn = now - yearJohn;
+var ageMark = 35;
+var average = (ageJohn + ageMark) / 2;
+console.log(average);
 
-// Logical Operators
-var johnOlder = ageJohn > ageMark;
-console.log(johnOlder);
-var johnOlder2 = ageJohn < ageMark;
-console.log(johnOlder2);
+// Multiple assignments
+var x, y;
+x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
 
+console.log(x, y);
 
-// typeof operator
-console.log(typeof johnOlder);
-console.log(typeof ageJohn);
+// More operators
 
-console.log(typeof 'Mark is older than John');
-var x;
+// x = x * 2; // both are same
 
-console.log(typeof x); 
+x *= 2;
+console.log(x);
 
+var a = 12;
+a *= 3;
+console.log(a);
+
+x += 10;
+console.log(x);
 
 <!-- JavaScript code end -->
                         </xmp>
