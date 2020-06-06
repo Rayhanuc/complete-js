@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>25. Objects and Properties</title>
+
+        <!-- bootstrap css link -->
+        <link href="../assets/css/bootstrap-v4.5.0.min.css" rel="stylesheet">
+        <!-- font-awesome css link -->
+        <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+        <!-- style css link -->
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <!-- responsive css link -->
+        <link href="../assets/css/responsive.css" rel="stylesheet">
+        <!-- css link end -->
+    </head>
+
+    <body>
+        <div class="heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-2">
+                        <h1>The Complete JavaScript Course 2020: Build Real Projects!</h1>
+                        <p>Press F12 to see the JavaScript code result in your browser console.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="class-code-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h1>25. Objects and Properties</h1>
+                        <xmp>
+<!-- JavaScript code start -->
+
+
+/************************** 
+Objects and Properties
+***************************/
+
+// Object literal
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane','Mark','Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+}
+console.log(john);
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
+
+
+// New Object syntax
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
+
+
+<!-- JavaScript code end -->
+                        </xmp>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    	<!-- jquery js link -->
+        <script src="../assets/js/jquery-v3.5.1.slim.min.js"></script>
+        <!-- popper js link -->
+        <script src="../assets/js/popper-v1.16.0.min.js"></script>
+        <!-- bootstrap js link -->
+        <script src="../assets/js/bootstrap-v4.5.0.min.js"></script>
+        <!-- main js link -->
+        <script src="../assets/js/main.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
